@@ -4,6 +4,18 @@ This document is essentially a list of shorthand notes describing work yet to co
 Unfortunately it is not complete enough for other people to pick work off the list and
 complete as there is too much un-said.
 
+## External Projects
+
+* https://github.com/Valkryst/VNameGenerator - generates names using different strategies. Combinator,
+  markov chains, crappy letter class combinator and context free generator.
+* https://github.com/Valkryst/VParser_CFG - Use a Context Free Grammar to generate data. Could be the
+  basis for our "template" language. Used by `VNameGenerator` above. 
+* https://github.com/ironarachne/namegen - Generates names using Combinator strategy. Has
+  good examples of different word classes that should be liberated. Apache2 licensed!
+* https://github.com/ironarachne/world - generates lots of different parts about a world.
+  Pantheon, trade goods, languages etc. Interesting for us is language generator that builds
+  up using phoneme classes (vowels,fricatives,stops etc). See `pkg/language/language.go`
+
 ## Strategies
 
 There are several strategies to derive names that can be implemented. Below is a few ideas.
