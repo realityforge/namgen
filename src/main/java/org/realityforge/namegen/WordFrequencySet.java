@@ -1,7 +1,11 @@
 package org.realityforge.namegen;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.file.Files;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -30,7 +34,32 @@ public final class WordFrequencySet
                                        @Nonnull final String... tags )
     throws IOException
   {
-    return from( key, path.toString(), Files.readAllLines( path ), tags );
+    try ( final InputStream inputStream = new FileInputStream( path.toFile() ) )
+    {
+      try ( final Reader reader = new InputStreamReader( inputStream ) )
+      {
+        return from( key, path.toString(), reader, tags );
+      }
+    }
+  }
+
+  @Nonnull
+  public static WordFrequencySet from( @Nonnull final String key,
+                                       @Nonnull final String source,
+                                       @Nonnull final Reader input,
+                                       @Nonnull final String... tags )
+    throws IOException
+  {
+    try ( final BufferedReader bufferedReader = new BufferedReader( input ) )
+    {
+      final List<String> lines = new ArrayList<>();
+      String line;
+      while ( null != ( line = bufferedReader.readLine() ) )
+      {
+        lines.add( line );
+      }
+      return from( key, source, lines, tags );
+    }
   }
 
   @Nonnull
