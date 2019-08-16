@@ -4,6 +4,9 @@ This document is essentially a list of shorthand notes describing work yet to co
 Unfortunately it is not complete enough for other people to pick work off the list and
 complete as there is too much un-said.
 
+* Define a `WordSetCatalog` class that will read the `sets.properties` file and provide a catalog of
+  all the different word sets available.
+
 ## External Projects
 
 * https://github.com/Valkryst/VNameGenerator - generates names using different strategies. Combinator,
