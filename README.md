@@ -29,3 +29,9 @@ a [Contributing](CONTRIBUTING.md) document is under development.
 # License
 
 The project is licensed under [Apache License, Version 2.0](LICENSE).
+
+# Credit
+
+Several libraries influenced the development of this library.
+  - [ironarachne/namegen](https://github.com/ironarachne/namegen) - the initial names database was originally
+    sourced from this project.
