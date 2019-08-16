@@ -9,7 +9,7 @@ complete as there is too much un-said.
 * https://github.com/Valkryst/VNameGenerator - generates names using different strategies. Combinator,
   markov chains, crappy letter class combinator and context free generator.
 * https://github.com/Valkryst/VParser_CFG - Use a Context Free Grammar to generate data. Could be the
-  basis for our "template" language. Used by `VNameGenerator` above. 
+  basis for our "template" language. Used by `VNameGenerator` above.
 * https://github.com/ironarachne/namegen - Generates names using Combinator strategy. Has
   good examples of different word classes that should be liberated. Apache2 licensed!
 * https://github.com/ironarachne/world - generates lots of different parts about a world.
@@ -34,4 +34,4 @@ such as `[male|individual|culture=japanese] [family|culture=japanese]` or even p
 `[male|individual|culture={C}] [family|culture={C}]`.
 
 This strategy produces reasonably realistic names if the input word sets and templates are realistic. However, the
-process of creating and tagging names is reasonably easy. 
+process of creating and tagging names is reasonably easy.

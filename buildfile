@@ -62,4 +62,3 @@ define 'namgen' do
     end
   end
 end
-
