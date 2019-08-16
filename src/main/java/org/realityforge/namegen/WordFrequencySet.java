@@ -30,9 +30,17 @@ public final class WordFrequencySet
                                        @Nonnull final String... tags )
     throws IOException
   {
+    return from( key, path.toString(), Files.readAllLines( path ), tags );
+  }
+
+  @Nonnull
+  private static WordFrequencySet from( @Nonnull final String key,
+                                        @Nonnull final String source,
+                                        @Nonnull final List<String> lines,
+                                        @Nonnull final String[] tags )
+  {
     final ArrayList<Word> words = new ArrayList<>();
 
-    final List<String> lines = Files.readAllLines( path );
     for ( final String line : lines )
     {
       final String l = line.trim();
@@ -47,7 +55,7 @@ public final class WordFrequencySet
 
     final HashSet<String> tagSet = new HashSet<>();
     Collections.addAll( tagSet, tags );
-    return new WordFrequencySet( key, path.toString(), tagSet, words );
+    return new WordFrequencySet( key, source, tagSet, words );
   }
 
   private WordFrequencySet( @Nonnull final String key,
