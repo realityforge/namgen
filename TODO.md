@@ -36,3 +36,13 @@ such as `[male|individual|culture=japanese] [family|culture=japanese]` or even p
 
 This strategy produces reasonably realistic names if the input word sets and templates are realistic. However, the
 process of creating and tagging names is reasonably easy.
+
+### Linguistic driven
+
+See a description at https://groups.google.com/forum/m/#!msg/rec.games.roguelike.development/cdgIgD3Plds/dkweliggW5AJ
+but essentially it involves:
+
+* starting with a subset of phonemes for a language.
+* applying rules to combine phonemes together to form words. The rules would be a subset of global rules
+  specific to a language.
+* Applying rules to convert phonemes to graphemes. 
