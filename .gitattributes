@@ -2,7 +2,9 @@
 * -text
 *.java text
 *.md text
+*.properties text
 *.rake text
+*.txt text
 *.yaml text
 *.yml text
 .gitattributes text
