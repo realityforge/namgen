@@ -16,6 +16,8 @@ complete as there is too much un-said.
 * https://github.com/ironarachne/world - generates lots of different parts about a world.
   Pantheon, trade goods, languages etc. Interesting for us is language generator that builds
   up using phoneme classes (vowels,fricatives,stops etc). See `pkg/language/language.go`
+* http://roguebasin.roguelikedevelopment.org/index.php?title=Random_name_generation a catalog of strategies
+  to generate names.
 
 ## Strategies
 
