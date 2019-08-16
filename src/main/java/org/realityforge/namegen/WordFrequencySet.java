@@ -50,10 +50,10 @@ public final class WordFrequencySet
     return new WordFrequencySet( key, path.toString(), tagSet, words );
   }
 
-  public WordFrequencySet( @Nonnull final String key,
-                           @Nonnull final String source,
-                           @Nonnull final Set<String> tags,
-                           @Nonnull final List<Word> words )
+  private WordFrequencySet( @Nonnull final String key,
+                            @Nonnull final String source,
+                            @Nonnull final Set<String> tags,
+                            @Nonnull final List<Word> words )
   {
     this.key = Objects.requireNonNull( key );
     this.source = Objects.requireNonNull( source );
